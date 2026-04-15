@@ -1,0 +1,40 @@
+{
+  "vendor_transaction_summary_data": [
+    {
+      "transaction_date": "2023-10-05T04:00:42.000000Z",
+      "vendor_id": "GXYZY123P",
+      "vendor_name": "Oriental Game",
+      "currency": "CNY",
+      "game_id": "1XYZ4ABCn",
+      "game_code": "1XYZ4ABCn",
+      "transaction_count": 10,
+      "ggr_sum": 1000,
+      "turnover_sum": 1000,
+      "house_edge": 1000
+    },
+    {
+      "transaction_date": "2023-10-04T04:00:42.000000Z",
+      "vendor_id": "GXYZY123P",
+      "vendor_name": "Oriental Game",
+      "currency": "CNY",
+      "game_id": "1XYZ4ABCn",
+      "game_code": "1XYZ4ABCn",
+      "transaction_count": 10,
+      "ggr_sum": 1000,
+      "turnover_sum": 1000,
+      "house_edge": 1000
+    },
+    {
+      "transaction_date": "2023-10-03T04:00:42.000000Z",
+      "vendor_id": "GXYZY123P",
+      "vendor_name": "Oriental Game",
+      "currency": "CNY",
+      "game_id": "1XYZ4ABCn",
+      "game_code": "1XYZ4ABCn",
+      "transaction_count": 10,
+      "ggr_sum": 1000,
+      "turnover_sum": 1000,
+      "house_edge": 1000
+    }
+  ]
+}

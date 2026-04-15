@@ -1,0 +1,19 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="emojione:bar-chart" clip-path="url(#clip0_715_7590)">
+<g id="Group">
+<path id="Vector" d="M0 0.5H1.5V24.5H0V0.5Z" fill="#333333" style="fill:#333333;fill:color(display-p3 0.2000 0.2000 0.2000);fill-opacity:1;"/>
+<path id="Vector_2" d="M0 23H24V24.5H0V23Z" fill="#333333" style="fill:#333333;fill:color(display-p3 0.2000 0.2000 0.2000);fill-opacity:1;"/>
+</g>
+<path id="Vector_3" d="M14.5125 23H19.0125V3.0125L14.5125 8V23Z" fill="#FB4F00" style="fill:#FB4F00;fill:color(display-p3 0.9843 0.3098 0.0000);fill-opacity:1;"/>
+<path id="Vector_4" d="M7.98749 23H12.4875V8L7.98749 12.9875V23Z" fill="#5C750A" style="fill:#5C750A;fill:color(display-p3 0.3608 0.4588 0.0392);fill-opacity:1;"/>
+<path id="Vector_5" d="M1.5 23H6V12.9875L1.5 18.0125V23Z" fill="#106995" style="fill:#106995;fill:color(display-p3 0.0627 0.4118 0.5843);fill-opacity:1;"/>
+<path id="Vector_6" d="M12.4875 8H17.475V23H12.4875V8Z" fill="#9ACA0A" style="fill:#9ACA0A;fill:color(display-p3 0.6039 0.7922 0.0392);fill-opacity:1;"/>
+<path id="Vector_7" d="M6 12.9875H10.9875V23H6V12.9875Z" fill="#21ADF1" style="fill:#21ADF1;fill:color(display-p3 0.1294 0.6784 0.9451);fill-opacity:1;"/>
+<path id="Vector_8" d="M19.0125 3.0125H24V23H19.0125V3.0125Z" fill="#FC9100" style="fill:#FC9100;fill:color(display-p3 0.9882 0.5686 0.0000);fill-opacity:1;"/>
+</g>
+<defs>
+<clipPath id="clip0_715_7590">
+<rect width="24" height="24" fill="white" style="fill:white;fill:white;fill-opacity:1;" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>

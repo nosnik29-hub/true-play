@@ -1,0 +1,1829 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+html
+  overflow-x: hidden
+body
+  background: #c7c7ca
+  color: #FFFFFF
+  font-family: $fontFam
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  overflow-x: hidden
+
+input[type='text']
+  padding-top: 7px
+  height: 36px
+
+input::placeholder
+  color: #7A828F
+
+input:focus
+  outline: none
+
+textarea
+  resize: none !important
+
+.form_inputs
+  margin-bottom: 0.75rem
+  display: flex
+  flex-flow: column
+  overflow: hidden
+  label
+    font-size: 14px
+    font-weight: bold
+
+.form-error
+  font-size: 13px
+  line-height: 16px
+  color: #FF4242
+  margin-top: 3px
+
+  span
+    display: block
+
+.zh
+ #app
+  #tableHeader
+    th
+      white-space: nowrap!important
+
+.zh
+ #app
+  .table-custom th
+    white-space: nowrap
+
+/*Date picker start*/
+.presetDatesLabel
+  display: block
+  width: 100%
+  padding: 0.35rem 1rem
+  cursor: pointer
+  transition: all 0.2s ease
+  &:hover
+    width: 100%
+    display: block
+    background: #597EB7
+    color: #fff
+
+.dp__action_buttons
+  display: flex
+  align-items: center
+  flex-flow: row
+  gap: 5px
+  padding: 0 1rem
+  border-left: 1px solid rgb(45 45 45)
+  justify-content: flex-start
+  flex-grow: 1
+
+  .dp__action_select
+    background: linear-gradient(180deg, #02d172 0%, #009450 100%)
+    color: #fff
+    order: 1
+    padding: 5px 10px
+    white-space: nowrap
+    height: 38px
+    border-color: transparent
+    border: 0px
+    &:hover
+      background: linear-gradient(180deg, #009450 0%, #02d172 100%)
+    &:before
+      font-family: "Font Awesome 5 Free"
+      content: "\f00c"
+      margin-right: 5px
+      font-weight: 900
+
+  .dp__action_cancel
+    background: linear-gradient(180deg, #e2e2e2 0%, #838383 100%)
+    color: #fff
+    order: 2
+    padding: 5px 10px
+    white-space: nowrap
+    height: 38px
+    border-color: transparent
+    border: 0px
+    &:hover
+      background: linear-gradient(180deg, #838383 0%, #e2e2e2 100%)
+    &:before
+      font-family: "Font Awesome 5 Free"
+      content: "\f05e"
+      margin-right: 5px
+      font-weight: 900
+
+.dp__action_row
+  width: 100%
+
+.dp__menu_content_wrapper
+  border-bottom: 1px solid rgb(45 45 45)
+
+.dp__selection_preview
+  width: fit-content
+  white-space: pre-wrap
+
+.dp__input_wrap .dp__input_icon_pad
+  padding-left: 0.75rem
+  padding-right: 60px
+
+.dp__input_icons
+  padding: 6px 8px
+/*Date picker end*/
+
+#app
+  .en
+    white-space: wrap!important
+
+#app
+  .menu
+    //background: red
+    width: 300px
+    max-height: calc(100% - 100px)
+    height: 100vh
+    position: absolute
+    top: 100px
+    bottom: 50px
+    left: 0
+    right: 0
+    //clip-path: inset(0px -15px 0px 0px)
+    z-index: 1
+    padding: 1px 5px 0 10px
+    display: flex
+    flex-direction: column
+    gap: 10px
+    .card:first-child
+      height: 218px
+    .card:last-child
+      flex: 0 1 calc(100% - 218px)
+      max-height: calc(100%)
+      margin-bottom: 50px
+
+  .nav
+    padding: 20px
+    display: flex
+    flex-flow: column
+    gap: 20px
+    width: 100%
+    &-container
+      overflow: hidden
+      border-radius: 5px
+      transition: all 0.35s ease-in-out
+      //&:hover
+        //max-height: 20em
+        //.nav-items
+          //background: #ece90b
+        //.nav-items.active
+        //i
+          //transform: rotate(180deg)
+    &-parent
+      font-size: 14px
+      display: flex
+      flex-flow: column
+      font-size: 14px
+    &-items
+      height: 35px
+      line-height: 35px
+      background: none
+      padding: 10px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 10px
+      cursor: pointer
+      transition: all 0.35s ease-in-out
+      //&:hover
+        //background: #F86A12
+        //i
+          //transform: rotate(180deg)
+    &-items.active
+      background: #cac706
+      font-weight: bold
+      i
+        transform: rotate(180deg)
+    &-item
+      line-height: 35px
+      color: #FFF
+      text-decoration: none
+      padding: 0 10px
+      display: block
+      transition: all 0.35s ease-in-out
+      &:hover
+        background: #566785
+
+  .router-link-active, .router-link-exact-active
+    background: #566785
+    color: #FFF
+    font-weight: 700
+
+  .header_bar
+    background: #c7c7ca
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 10
+    display: flex
+    align-items: center
+    flex-flow: row
+    justify-content: space-between
+    .card
+      max-width: 100%
+      height: 80px
+      margin: 10px
+      padding: 0 20px
+      align-items: center
+      justify-content: space-between
+
+  .notif_modal_title
+    font-family: "Roboto", sans-serif
+    text-transform: uppercase
+    font-size: 15px !important
+    color: #3a4e6d
+
+  .mark_allRead
+    font-family: "Roboto", sans-serif
+    font-size: 15px
+    color: #407ed7
+
+  .notification
+    position: relative
+    display: block
+
+    img
+      vertical-align: middle
+      margin-right: 10px
+      width: 18px
+
+    span
+      background: #FFA800
+      position: absolute
+      min-width: 22px
+      border-radius: 20px
+      text-align: center
+      height: 22px
+      color: #FFF
+      font-size: 12px
+      font-style: normal
+      font-weight: 700
+      line-height: 22px
+      right: -2px
+      top: -10px
+
+  .notification-dropdown
+    padding-bottom: 0px
+    color: #111111
+
+    .dropdown-body::-webkit-scrollbar-track
+      background: #ccc !important
+      border-radius: 5px
+    /* Handle */
+    .dropdown-body::-webkit-scrollbar-thumb
+      background: rgba(0 0 0 /0.25)
+      border-radius: 5px
+
+    .dropdown-body
+      padding: 0 1rem
+      button, a
+        display: flex
+        align-items: center
+        padding: 5px 0px
+        height: 62px
+        &:last-child
+          border-bottom: none
+          margin-bottom: 5px
+
+        div
+          padding-left: 10px
+          text-align: left
+          flex-grow: 1
+          max-width: calc(100% - 38px)
+
+          span
+            font-size: 12px
+            line-height: 14px
+            color: #989696
+
+          p
+            text-align: left
+            font-size: 12px
+            line-height: 14px
+            color: #333333
+            width: 100%
+
+          .with-counter
+            display: flex
+            align-items: center
+            padding: 0px
+            max-width: 100%
+
+            p
+              flex-grow: 1
+
+            .counter
+              flex-grow: 0
+              flex-shrink: 0
+              width: initial
+
+    .notification-icon
+      flex-shrink: 0
+      width: 38px
+      height: 38px
+      border-radius: 45px
+      display: inline-block
+      text-align: center
+      line-height: 50px
+      color: #FFFFFF
+      font-size: 28px
+
+      .fa
+        font-size: 18px
+        line-height: 38px
+        display: block
+
+      &-green
+        background: linear-gradient(180deg, #02D172 0%, #009450 100%)
+
+      &-blue
+        background: linear-gradient(180deg, #2CD1EB 0%, #0B5C97 100%)
+
+      &-red
+        background: linear-gradient(180deg, #FF5151 0%, #D92626 100%)
+
+    .dropdown-top
+      padding: 20px
+
+      h5
+        font-size: 15px
+        font-style: italic
+        font-weight: 700
+        line-height: normal
+
+      span
+        font-size: 18px
+        font-style: normal
+        font-weight: 900
+        line-height: normal
+
+  .private_public_key
+    display: block
+    // min-width: 160px
+
+  .main_container
+    //background: red
+    position: relative
+    z-index: 1
+    left: 300px
+    max-width: calc(100% - 300px)
+    top: 100px
+    bottom: 0
+    width: 100%
+    max-height: auto
+    height: auto
+    display: flex
+    flex-flow: column
+    padding: 1px 10px 0 5px
+    gap: 2rem
+    margin-bottom: 100px
+    .card
+      height: auto
+      max-width: 100vw
+    .container-grid
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(calc(20% - 1em), 1fr))
+      gap: 1em
+    .container-grid > .square
+      background-color: lime
+      border-radius: 10px
+      aspect-ratio: 1/1
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      &:hover
+        .inner
+          transform: scale(1.05, 1.05)
+          box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.35)
+        .play-btn
+          opacity: 1
+      .inner
+        position: relative
+        width: 100%
+        height: 100%
+        background-size: cover
+        background-position: center
+        transform: scale(1, 1)
+        transition: transform 0.4s
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0)
+      .play-btn
+        position: absolute
+        padding: 8px 20px
+        opacity: 0
+        cursor: pointer
+        color: #FFF
+        background: linear-gradient(#8198F8, #4B5890)
+        border: none
+        border-radius: 5px
+        font-weight: 800
+        font-size: 20px
+        font-family: 'Inter', sans-serif
+        transition: opacity 0.4s ease-in-out
+      .gm-details
+        padding: 0.5rem
+        width: 100%
+        text-transform: uppercase
+        color: #FFF
+        font-size: 13px
+        position: absolute
+        left: 0
+        bottom: 0
+  .slider
+    height: 407px
+    border-radius: 30px
+
+  .card
+    //background: red
+    display: flex
+    align-items: flex-start
+    //width: 50vw
+    position: relative
+    padding: 0
+    width: 100%
+    box-sizing: border-box
+    $border: 1px
+    color: #FFF
+    z-index: 1
+    // background: #20252F
+    background: linear-gradient(274deg, #202B40 89.77%, #364560 100%)
+    // background-clip: padding-box
+    // border: solid transparent transparent
+    border-radius: 5px
+    // box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.50)
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.50)
+    // -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.50)
+    &:before
+      content: ''
+      position: absolute
+      background: #20252F
+      left: 1px
+      top: 1px
+      right: 1px
+      bottom: 1px
+      border-radius: 4px
+      z-index: -1
+      // top: 0
+      // right: 0
+      // bottom: 0
+      // left: 0
+      // z-index: -1
+      // margin: -$border /* !importanté */
+      // border-radius: inherit /* !importanté */
+      // background: linear-gradient(45deg, #39445E, #222B3F)
+
+    &.card-main
+      max-width: 100%
+    .main-container
+      max-width: calc(100% - 310px)
+
+  .user
+    display: flex
+    flex-flow: column
+    padding: 30px 10px
+    align-items: center
+    justify-content: center
+    gap: 10px
+    width: 100%
+    &-pic
+      width: 82px
+      height: 82px
+      border-radius: 170px
+      background-size: cover
+      background-color: #F4F4F4
+      background-position: center
+      box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75)
+      overflow: hidden
+      -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75)
+    &-role
+      font-size: 18px
+      font-style: normal
+      font-weight: 700
+      line-height: 130%
+      text-transform: uppercase
+      font-smoothing: antialiased
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+    &-last-login
+      display: flex
+      font-size: 13px
+      padding: 4px 15px
+      flex-flow: row
+      flex-wrap: nowrap
+      justify-content: center
+      align-items: center
+      gap: 5px
+      & span:first-child
+        font-weight: 700
+    &-controls
+      display: flex
+      align-items: center
+      flex-flow: row
+      flex-wrap: nowrap
+      gap: 21px
+      transition: display 1s ease
+
+  .page-container
+    //background: red
+    padding: 101px 10px 10px 10px
+    position: relative
+    row-gap: 10px
+    column-gap: 10px
+    display: flex
+    flex-flow: row
+    flex-wrap: nowrap
+    width: 100%
+    min-height: calc(100vh - 50px)
+    max-width: 100%
+
+  .page
+    width: 100%
+
+  .page-header
+    color: #FFF
+    height: 66px
+    width: inherit
+    position: relative
+    top: 0
+    left: 0
+    border-bottom: 1px solid #293344
+    display: flex
+    flex-wrap: nowrap
+    align-items: center
+    justify-content: space-between
+    padding: 0 20px
+    &-title-container
+      display: flex
+      gap: 15px
+      flex-wrap: nowrap
+      flex-flow: row
+      align-items: center
+      line-height: 26px
+    &-title-icon
+      user-select: none
+      transform: skew(-25deg)
+      display: flex
+      flex-flow: row
+      margin-left: 5px
+      gap: 3px
+      & div:nth-child(1)
+        width: 14px
+        background: #FFFFFF
+      & div:nth-child(2)
+        width: 10px
+        background: #FFFFFF
+      & div:nth-child(3)
+        width: 6px
+        background: #FFFFFF
+    &-title
+      font-family: $fontFam
+      leading-trim: both
+      text-edge: cap
+      font-size: 20px
+      font-style: normal
+      font-weight: 700
+      line-height: 26px
+      text-transform: uppercase
+      white-space: nowrap
+
+  .sidebar
+    display: flex
+    flex-flow: column
+    flex: 0 0 300px
+    align-items: stretch
+    gap: 10px
+    max-width: 300px
+    position: relative
+    opacity: 1
+
+  .activityLogs_grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+
+  .expanded
+    position: absolute
+    display: flex!important
+    left: 0px
+    top: 100px
+    z-index: 3
+    width: 100%
+    margin: auto
+    padding: 0 10px 10px 10px
+    max-width: 100%!important
+    height: 100%
+    opacity: 1
+    background: linear-gradient(288deg, #242C38 0%, #21252A 55%)
+
+  .logout-btn
+    display: flex
+    border-radius: 4px
+    align-items: center
+    justify-content: center
+    background: #FF4242
+    width: 28px
+    height: 28px
+
+  .footer
+    //background: blue
+    height: 50px
+    display: flex
+    align-items: center
+    padding: 10px
+    color: #FFF
+    gap: 10px
+    font-size: 11px
+
+  .inner-nav
+    display: flex
+
+    a
+      color: rgba(255, 255, 255, 0.50)
+      padding: 10px
+      border: 1px solid #293344
+      background: transparent
+      border-bottom: 0px
+      font-size: 14px
+      font-weight: 400
+      line-height: 130%
+      text-transform: capitalize
+
+      &.router-link-exact-active
+        color: #FFFFFF
+        background: #2B3343
+
+      & + a
+        border-left: 0px
+
+    a:first-child
+      border-radius: 5px 0px 0px 0px
+
+    a:last-child
+      border-radius: 0px 5px 0px 0px
+
+  .inner-page
+    border: 1px solid #293344
+    border-radius: 0px 5px 5px 5px
+    padding: 20px
+
+.container-grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    gap: 20px
+    &.grid-w-full
+      grid-template-columns: 1fr
+.container-grid > div
+    //background-color: lime
+    //border-radius: 10px
+    //aspect-ratio: 1/1
+    // display: flex
+    // flex-flow: column
+    // align-items: flex-start
+    // justify-content: flex-start
+    position: relative
+    text-align: left
+    label
+        color: #FFF
+        font-size: 14px
+        font-weight: 700
+    // input
+    //     width: 100%
+    //     color: #000
+    //     height: 35px
+    //     background: rgb(44, 51, 66)
+    //     border-radius: 4px
+    //     padding: 8px 10px
+    //     outline: none
+    //     color: #FFF
+
+//Ryan end
+.form-group
+  position: relative
+  margin-bottom: 10px
+
+  label
+    font-size: 14px
+    font-style: normal
+    font-weight: 700
+    line-height: 130%
+    text-transform: capitalize
+    display: block
+    margin-bottom: 3px
+
+  // .form-error
+  //   line-height: 16px
+  //   color: #FF4242
+  //   font-size: 14px
+
+  //   span
+  //     display: block
+
+.form-control
+  border-radius: 5px
+  background: #2B3343
+  box-shadow: none
+  border: none
+  display: block
+  width: 100%
+  padding: 0.375rem 0.75rem
+  font-size: 1rem
+  line-height: 1.5
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+
+  &:disabled
+    color: rgba(255, 255, 255, 0.30)
+
+  label
+      &.disabled
+        color: rgba(255, 255, 255, 0.30)
+      &:hover
+        background: #2B3343
+
+  &.with-checkbox
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    p
+      margin: 0px
+      font-size: 14px
+      font-style: normal
+      font-weight: 700
+      line-height: 20px
+
+      &.unchecked
+        opacity: 0.3
+
+.form-inputs
+  flex: 1
+  font-weight: normal
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.form-icon
+  position: relative
+
+  .form-control
+    padding-right: 35px
+
+  span,button,a
+    position: absolute
+    right: 10px
+    top: 50%
+    transform: translateY(-50%)
+    margin-top: 1px
+    font-size: 20px
+
+.form-icon-prepend
+  position: relative
+
+  .form-control
+    padding-left: 35px
+
+  span,button,a
+    position: absolute
+    left: 10px
+    top: 50%
+    transform: translateY(-50%)
+    margin-top: 1px
+
+.select-container
+  display: flex
+  align-items: center
+  gap: 10px
+
+  .listbox-button-sm
+    height: 25px
+    padding-top: 0
+    padding-bottom: 0
+    padding-left: 8px
+    padding-right: 20px
+
+  .lang-select
+    padding: 0px 20px 0px 0px
+    overflow: hidden
+    display: block
+    border-radius: 5px
+
+    img
+      height: 25px
+      width: 32px
+      object-fit: cover
+      object-position: left top
+
+.betting-date-container
+  display: flex
+  height: 36px
+  .dp__input
+    border-radius: 5px 0px 0px 5px!important
+
+  .ant-select
+    border-radius: 0px 5px 5px 0px!important
+    max-width: 105px!important
+    position: relative
+
+    .ant-select-selector
+        background: #597EB7!important
+
+    .ant-select-arrow
+        background-color: #597EB7 !important
+        color: #ffffff !important
+
+.lang-options
+  width: max-content
+  left: 50%
+  transform: translateX(-50%)
+
+.listbox-button
+  background: #2B3343
+  border: 0px
+  border-radius: 3px
+  padding-top: 4px
+  padding-bottom: 4px
+  padding-right: 25px
+  cursor: pointer
+
+  .listbox-button-span
+    padding-right: 1px
+
+  span
+    font-weight: 600
+    font-size: 18px
+    color: #FFFFFF
+
+.table-sticky
+  position: sticky
+  right: 0
+  box-shadow: inset 1px 0px 0px #293344
+
+.table-scroll
+  max-width: 100%
+  max-height: 511px
+  overflow-x: auto
+  overflow-y: auto
+  border-radius: 5px
+  border: 1px solid #2C3342
+
+//   &::-webkit-scrollbar
+//     height: 16px
+//     margin: 2px 0px
+
+//   &::-webkit-scrollbar-track
+//     background: #1F2127
+
+
+//   &::-webkit-scrollbar-thumb
+//     background: #545A66
+//     border-radius: 200px
+//     border: 3px solid #1F2127
+//     cursor: pointer
+
+//     &:hover
+//       background: #636A79
+
+.table-custom
+  font-family: 'Istok Web', sans-serif
+  width: 100%
+  color: #FFF
+
+  td,th
+    // padding: 4px
+    padding: 4px 10px
+    height: 44px
+    //border-right: 1px solid #F8F8F8
+    text-align: center!important
+
+    &:last-child
+      border-right: 0px
+
+  thead > tr
+   border-radius: 20px
+  //  background: red
+
+  th
+    font-weight: 700
+    font-size: 0.85rem
+    line-height: 130%
+    white-space: pre-wrap
+    background: #1F2127
+    position: sticky
+    top: 0
+
+    &.th-dark
+      background: rgba(0, 0, 0, 0.05)
+      //border-bottom: 1px solid #DDDDDD
+
+    &.bg-green
+      background: rgba(167 243 208 / 1)
+    &.bg-blue
+      background: rgba(162 201 230 / 1)
+
+    a, button
+      font-weight: 700
+      font-size: 0.85rem
+      line-height: 130%
+      align-items: center
+      display: inline-flex
+
+      .fa
+        margin-left: 3px
+
+      span
+        margin-left: 8px
+        display: block
+
+        .fa
+          font-size: 11px
+          margin-left: 0px
+
+  td
+    font-weight: 400
+    font-size: 14px
+    line-height: 130%
+    &.bg-green
+      background: rgba(167 243 208 / 1)
+    &.bg-blue
+      background: rgba(162 201 230 / 1)
+
+
+    .table-game-img
+      margin: auto
+      display: block
+      width: 34px
+      height: 34px
+      object-fit: cover
+
+    .checkbox-custom,.btn
+      margin: auto
+      display: inline-block
+      vertical-align: middle
+
+    .btn,.btn-action
+      + .checkbox-custom
+        margin-left: 10px
+
+    &.text-left
+      text-align: left
+
+    &.text-right
+      text-align: right
+
+    .color-green
+      color: #00881E
+
+    .color-red
+      color: #FF5151
+
+    .color-yellow
+      color: #E8AA42
+
+    .color-gray
+      color: #838383
+
+    .color-red, .color-green
+      .fa
+        font-size: 10px
+
+    .table-link,a
+      color: #597EB7
+      text-decoration: underline
+      cursor: pointer
+
+      &:hover
+        color: #1B9DFD
+
+    .badge
+      border-radius: 3px
+      color: #FFFFFF
+      padding: 1px 6px
+      min-width: 75px
+      display: inline-block
+      font-size: 12px
+      text-align: center
+      font-weight: 700
+
+      &-yellow
+        background: #E9D100
+
+      &-orange
+        background: #FFA800
+
+      &-red
+        background: #EB5757
+
+      &-green
+        background: #169E00
+
+    a.badge
+      text-decoration: underline
+
+    .word-break
+      max-width: 360px
+      display: block
+      margin: auto
+      white-space: break-spaces
+
+    .long-text
+      max-width: 250px
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      margin: auto
+
+  tr:nth-child(odd)
+    td
+      background: #272C39
+      &.bg-green
+        background: rgba(161 237 202 / 1)
+      &.bg-blue
+        background: rgba(156 195 223 / 1)
+
+  tr:nth-child(even)
+    td
+      background: #303645
+      &.bg-green
+        background: rgba(161 237 202 / 1)
+      &.bg-blue
+        background: rgba(156 195 223 / 1)
+
+  .tr-black,.tfoot,tr.tfoot:nth-child(odd)
+    background: #DCDCDC
+
+  .tr-black
+    td
+      //border-top: 1px solid #FFFFFF
+
+  .tfoot td
+    //border-top: 1px solid #DADADA
+
+  &.table-lg
+    width: 100vw
+    max-width: 1264px
+
+  &.table-50 td
+    width: 50%
+
+.truncate_td
+  white-space: nowrap
+  text-overflow: ellipsis
+  max-width: 200px
+  overflow: hidden
+
+.truncate_link
+  white-space: nowrap
+  text-overflow: ellipsis
+  max-width: 200px
+  overflow: hidden
+  color: #597EB7
+
+.truncate_td > span
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+
+.fade-enter-active,
+.fade-leave-active
+  position: absolute
+  transition: opacity 0.5s
+  opacity: 1
+
+.fade-enter-from,
+.fade-leave-to
+  opacity: 0
+
+.vs__dropdown-menu
+  color: #FFF
+  display: block
+
+/*Vue-select custom style adjustment*/
+.vs__selected
+  color: #FFF!important
+  white-space: nowrap
+
+.vs__selected-options
+  align-items: center
+
+.vs__search::placeholder
+  color: #7A828F!important
+
+.v-select input::placeholder
+  color: rgba(255 255 255 / 0.5)
+
+.vs__actions
+  padding: 6px 12px!important
+  height: inherit
+
+  button > svg
+    fill: rgb(149 149 149)!important
+    stroke: #2B3343
+    stroke-width: 1.5px
+    stroke-linejoin: round
+
+.vs__open-indicator
+  fill: rgb(149 149 149)!important
+  stroke: #2B3343
+  stroke-width: 2px
+  stroke-linejoin: round
+
+  path
+    opacity: 0
+
+.vs__dropdown-menu
+  background: #2B3343!important
+
+.vs__dropdown-toggle
+  border: none!important
+  height: inherit
+
+.vue-treeselect__control-arrow
+  opacity: 0
+
+.vue-treeselect__control-arrow-container,.vs__actions
+  &::after
+    content: "\f078"
+    font-family: FontAwesome
+    font-size: 14px
+    color: #959595
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 12px
+    transition: all 80ms ease-in-out
+
+.vue-treeselect--open .vue-treeselect__control-arrow-container ,.vs--open .vs__actions
+  &::after
+    transform: translateY(-50%) rotate(180deg)
+
+/*Vue Datepicker custom style adjustment*/
+.dp__input
+  border: none!important
+  background-color: #2B3343!important
+  padding: 1px 4px 4px 4px!important
+  height: 36px!important
+  &::placeholder
+    color: #7A828F
+    opacity: 1!important
+    font-family: 'Istok Web', sans-serif
+
+.dp__input_wrap > div
+  position: relative
+  top: -18px
+  left: calc(100% - 35px)
+  inset-inline-end: 0
+  transform: translateY(-50%)
+  cursor: pointer
+
+.dp__clear_icon
+  position: absolute
+  top: 50%
+  left: calc(100% - 60px)
+  inset-inline-end: 0
+  transform: translateY(-50%)
+  cursor: pointer
+
+.dp__input_icon_pad
+  padding-inline-start: 10px!important
+  padding-inline-end: 60px!important
+
+.dp__theme_dark
+  --dp-background-color: #2B3343!important
+  background-color: #2B3343!important
+  border-radius: 5px!important
+
+.dp__arrow_top
+  background-color: #2B3343!important
+
+/*VuetreeSelectStyle*/
+.vue-treeselect__control-arrow
+  fill: rgb(0 0 0) !important
+
+.vue-treeselect__control
+  background: #2B3343 !important
+  border: none!important
+  outline: none
+
+.vue-treeselect__menu
+  background: #2B3343!important
+  color: #FFF
+  border: none!important
+
+.vue-treeselect__control-arrow, .vue-treeselect__x
+  fill: rgb(149 149 149)!important
+
+
+
+.vue-treeselect__option--highlight, .vue-treeselect__option--selected
+  background: rgba(88 151 251 / 1)!important
+
+.vue-treeselect div, .vue-treeselect span
+  color: #FFF
+
+.vue-treeselect__placeholder
+  color: #7A828F!important
+  display: flex
+  align-items: center
+
+
+.hamburger
+  display: none
+  cursor: pointer
+
+.refresh-table, .table-showing
+  color: #FFF
+  font-size: 13.5px
+  font-family: 'Istok Web', sans-serif
+
+.required-fields
+  color: #FF2035
+  font-size: 12px
+  font-style: normal
+  font-weight: 400
+  line-height: normal
+  text-align: left
+
+.checkbox-custom
+  display: inline-block
+  position: relative
+  width: 42px
+  max-width: 42px
+  height: 22px
+  border-radius: 22px
+  margin-left: 13px
+  vertical-align: middle
+
+  input
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    z-index: 5
+    cursor: pointer
+    opacity: 0
+
+.checkbox-style
+  &::after
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    border-radius: 20px
+    // background: rgb(107, 112, 123)
+    background: rgb(44, 51, 66)
+    transition: all 400ms ease-in-out
+    border: 1px solid #264161
+
+  &::before
+    content: ""
+    position: absolute
+    z-index: 2
+    height: 14px
+    width: 14px
+    border: 1px solid rgba(0, 0, 0, 0.06)
+    left: 4px
+    top: 4px
+    background: #8d8989
+    border-radius: 20px
+    transition: all 400ms ease-in-out
+
+input:checked ~ .checkbox-style
+  &::after
+    background: #617DB2
+    border-color: #617DB2
+
+  &::before
+    left: 24px
+    background: #FFFFFF
+
+input:disabled ~ .checkbox-style
+  &::after
+    background: rgba(97,125,178,.15)
+    border-color: rgba(97,125,178,.15)
+
+  &::before
+    background: rgba(255,255,255,.15)
+
+@media screen  and (min-width: 0px) and (max-width: 344px)
+  .private_public_key
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    display: block
+    max-width: 160px
+
+@media screen  and (min-width: 345px) and (max-width: 374px)
+  .private_public_key
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    display: block
+    max-width: 208px
+
+@media screen and (min-width: 376px) and (max-width: 467px)
+  .private_public_key
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    display: block
+    max-width: 208px
+
+@media screen and (min-width: 468px) and (max-width: 767px)
+  .private_public_key
+    white-space: nowrap
+    display: block
+
+@media screen and (min-width: 768px) and (max-width: 840px)
+  .private_public_key
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    display: block
+    max-width: 100%
+
+@media screen and (min-width: 841px) and (max-width: 1023px)
+  .private_public_key
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    display: block
+    max-width: 100%
+
+@media screen and (min-width: 1024px)
+  .private_public_key
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    display: block
+    max-width: 100%
+
+@media  (max-width: 1024px)
+  .sidebar
+    display: none!important
+    position: absolute
+  #app .card.card-main
+    max-width: 100%
+  .main-container
+    max-width: unset!important
+  .page-header-title
+    font-size: 14px!important
+  .hamburger
+    display: inline-block
+  .current-user
+    display: none
+  .main-container
+    max-width: 100% !important
+
+@media (min-width: 1025px)
+  .sidebar
+    display: flex!important
+    position: absolute
+
+.modal-header
+  border-bottom: 3px solid #2B3343 !important
+  padding: 30px 20px 30px 20px !important
+
+.toast
+  border-radius: 5px
+  max-width: calc(100% - 350px)
+  background: #FFF
+  position: relative
+  z-index: 99999999
+  max-width: 400px
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.5)
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.5)
+  -moz-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.5)
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #CCCCCC
+    padding: 0.75rem
+  &-header-title
+    font-weight: bold
+  &-body
+    padding: 0.75rem
+  &-message
+    display: flex
+    justify-content: flex-start
+    flex-flow: row
+    gap: 1rem
+    flex-wrap: nowrap
+    align-items: baseline
+
+.toast-success
+  color: #036628
+  background: #d6f0e0
+  .toast-header
+    border-bottom: 1px solid #036628
+    display: flex
+    flex-flow: row
+    column-gap: 2rem
+    align-items: center
+    justify-content: space-between
+
+.toast-error
+  color: #a31c32
+  background: #f9e1e5
+  .toast-header
+    border-bottom: 1px solid #a31c32
+    display: flex
+    flex-flow: row
+    column-gap: 2rem
+    align-items: center
+    justify-content: space-between
+
+.toast-warning
+  color: #9f7011
+  background: #fbf0da
+  .toast-header
+    border-bottom: 1px solid #9f7011
+    display: flex
+    flex-flow: row
+    column-gap: 2rem
+    align-items: center
+    justify-content: space-between
+
+.toast-info
+  color: #08799c
+  background: #def1f7
+  .toast-header
+    border-bottom: 1px solid #08799c
+    display: flex
+    flex-flow: row
+    column-gap: 2rem
+    align-items: center
+    justify-content: space-between
+
+  .fa-times
+    display: none
+
+.red
+  color: #FF5151 !important
+
+.vs__search, .vs__search:focus
+  margin: none !important
+  padding: 0 7px !important
+  height: inherit !important
+  // width: inherit !important
+
+.tabContainer
+  display: flex
+  flex-wrap: nowrap
+  flex-flow: row
+  align-items: center
+  justify-content: flex-start
+  gap: 0
+
+.tabPill
+  border-radius: 1px
+  border: 1px solid #2c3342
+  padding: 0.5rem 0.75rem
+  margin-right: -5px
+  font-size: 14px
+  transition: background 0.5s ease
+  color: rgba(255 255 255 / 0.5)
+  &:hover
+    background: #2c3342
+
+.tabPill:first-child
+  border-top-left-radius: 5px
+
+.tabPill:last-child
+  border-top-right-radius: 5px
+
+.tab-content-wrapper
+  border-radius: 5px
+  border-top-left-radius: 0px
+  margin-bottom: 1rem
+  margin-top: -21px
+  width: 100%
+  text-align: left
+
+.active
+  background: #2c3342
+  font-weight: bold
+  color: rgba(255 255 255 / 1)
+
+
+.vs--multiple .vs__selected
+  background-color: #566785 !important
+  border-radius: 15px
+  padding: 0.15rem 0.5rem
+  font-size: 14px
+
+.vs--multiple .vs__deselect
+  fill: #FFFFFF !important
+
+.vs--single
+  &.vs--open .vs__selected, &.vs--loading .vs__selected
+    top: 2px
+
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
+  background-color: transparent
+
+/* Track */
+::-webkit-scrollbar-track
+  background: linear-gradient(288deg, #242C38 0%, #21252A 55%)
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: #666
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: rgb(144 146 151 / 1)
+
+.scroll-y
+  overflow-y: scroll !important
+
+.modal-lg
+  max-width: 80%!important
+
+@media (max-width: 1024px)
+  .modal-lg
+    max-width: 90%!important
+
+
+.modal-inner
+  max-height: 90% !important
+
+.check-box
+  border-radius: 5px
+  background: #566785
+  padding: 0.375rem 0.75rem
+  font-size: 1rem
+  line-height: 1.5
+
+.form-disabled
+  background: #30405B
+  max-height: 36px!important
+  color: rgba(255, 255, 255, 0.3)
+
+.form-disabled .vs__dropdown-toggle, .form-disabled .vs__dropdown-toggle .vs__search, .form-disabled .vs__dropdown-toggle .vs__search .vs__open-indicator
+  background: #30405B !important
+  color: rgba(255, 255, 255, 0.3) !important
+
+.form-disabled div.vs__actions
+  display: none!important
+
+.main-container
+  width: 100%
+  min-height: 100%
+  max-width: calc(100% - 310px)
+  // -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5) !important
+
+
+.og-blue
+  border-radius: 10px
+  background: #2B3343
+  box-shadow: none
+  border: none
+  display: block
+  width: 100%
+  padding: 0.75rem 0.75rem
+
+.p-010
+  padding: 0.10rem !important
+
+#app .card.card-main
+  max-width: 100%
+
+.main-container .card
+  height: 100%
+
+.main-container .card.operator-container
+  height: inherit !important
+
+.nav-item
+  display: flex !important
+  justify-content: space-between
+  gap: 10px
+
+.goto-input
+  color: #CCCCCC
+  font-weight: 600
+  font-size: 0.875rem
+  height: 36px
+
+.goto-input:focus::placeholder
+  color: transparent
+
+.goto-input::placeholder
+  font-family: "Istok Web", "sans-serif", FontAwesome
+
+.preloader
+  position: absolute
+  overscroll-behavior: unset
+  z-index: 111
+  background: rgb(33 37 46 / 0.95)
+  border-radius: 5px
+  width: 100%
+  display: flex
+  align-items: center
+  flex-flow: column
+  justify-content: center
+  height: 100%
+  border: 1px solid #2c3342
+
+.withdraw-text
+  color: #ff4242
+
+.custom-check-box
+  display: block
+  font-size: 1rem
+  line-height: 1.5
+
+.table-custom .custom-link span:hover
+  color: #1B9DFD
+
+.table-custom .custom-link span
+  color: #597EB7
+  text-decoration: underline
+  cursor: pointer
+
+.bg-og-gray
+  background: #2B3343
+
+td span:not([class])
+  text-overflow: ellipsis
+  overflow: hidden
+
+.ellipsis-blue
+  color: #597EB7
+
+#md-editor-v3_1-preview > h1, .other_promos > h1, .winning_table > h1
+  font-size: 40px
+  text-align: center
+  padding: 1rem 0
+  line-height: normal
+  font-family: 'Passero One', sans-serif
+
+#md-editor-v3_1-preview div
+  color: #FFF
+  line-height: 1.25em
+  width: 100%
+  margin: auto
+  word-break: break-word
+
+
+#md-editor-v3_1-preview blockquote
+  background: rgb(48 53 65)
+  color: #FFF
+  border-radius: 1rem
+  padding: 2rem
+  p
+    font-size: 20px
+    color: rgba(255 255 255 / 0.5)
+  h2
+    padding-bottom: 1rem
+    line-height: normal
+
+.md-editor-preview
+  font-family: 'Passero One', sans-serif !important
+  p
+    b,strong
+      font-weight: bold !important
+    a
+      text-decoration: underline !important
+      color: orange !important
+  h1
+    font-size: 40px !important
+    text-align: center !important
+    padding: 1rem 0 !important
+    line-height: normal !important
+  h2
+    font-size: 30px !important
+    line-height: normal !important
+  ol,ul,p
+    font-family: 'Noto Sans', sans-serif !important
+  ol
+    color: white !important
+    list-style: decimal !important
+    margin-left: 1rem !important
+    li
+      font-size: 20px !important
+      padding-bottom: 20px !important
+      color: rgba(255 255 255 / 0.5) !important
+      ol
+        list-style: lower-alpha !important
+        margin-left: 1em !important
+  ul
+    color: white !important
+    list-style: disc !important
+    margin-left: 1rem !important
+    li
+      font-family: 'Noto Sans', sans-serif !important
+      font-size: 20px !important
+  img
+    width: auto !important
+    aspect-ratio: 1/1 !important
+
+  h2:has(+ table)
+    user-select: none !important
+    text-align: center !important
+
+  table
+    background: rgb(33 37 46) !important
+    width: 100% !important
+    overflow: hidden !important
+    border-radius: 30px !important
+    box-shadow: 0 0 10px 0 rgba(0 0 0 / 1) !important
+
+    thead
+      tr
+        th
+          font-family: 'Noto Sans', sans-serif !important
+          font-size: 20px !important
+          font-weight: bold !important
+          text-align: center !important
+          padding: 0.5rem !important
+
+    tbody
+      border-bottom: 20px solid rgb(33 37 46) !important
+      tr:nth-child(odd)
+        background: rgb(48 53 65) !important
+      tr:nth-child(even)
+        background: transparent !important
+      tr
+        td
+          font-family: 'Noto Sans', sans-serif !important
+          font-size: 20px !important
+          text-align: center !important
+          padding: 0.5rem !important
+
+  blockquote
+    display: block !important
+    margin-bottom: 4rem !important
+    p
+      padding-bottom: 1rem !important
+    p:last-child
+      padding-bottom: 0 !important
+    ol > li:last-child
+      padding-bottom: 0 !important
+  pre
+    background: #ccc !important
+    color: black !important
+    padding: 2rem !important
+    border-radius: 20px !important
+    code
+      color: black !important
+  p
+    code
+      color: yellow !important
+      padding: 0.25rem 1rem !important
+      background: #ccc !important
+      color: #000 !important
+      border-radius: 4px !important
+      border: 1px solid black !important
+
+.md-editor div.default-theme
+  --md-theme-quote-border: none !important
+
+#md-editor-v3_1-preview > h2, #md-editor-v3_1-preview > h3, #md-editor-v3_1-preview > h4, #md-editor-v3_1-preview > h5, #md-editor-v3_1-preview > h6
+  font-family: 'Passero One', sans-serif
+
+#md-editor-v3_1-preview
+  color: #ffffff
+
+.md-editor-preview h1, .md-editor-preview h2, .md-editor-preview h3, .md-editor-preview h4, .md-editor-preview h5, .md-editor-preview h6
+  color: #ffffff !important
+
+.summary-title
+    padding: 5px
+    display: flex
+    align-items: center
+
+.summary-title h1
+    display: flex
+    padding-top:5px
+
+.toggle-summary-table-btn
+    margin-left: auto
+    margin-right: 10px
+    font-size: 24px
+    font-weight: bold
+
+.ant-tooltip-inner
+  color: black !important
+
+.modal-md
+  max-width: 50% !important
+
+.modal-lg
+  max-width: 80% !important
+
+@media (max-width: 1024px)
+  .modal-lg
+    max-width: 90% !important
