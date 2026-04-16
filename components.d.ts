@@ -9,11 +9,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ActivityDropdown: typeof import('./src/components/ActivityDropdown.vue')['default']
-    Button: typeof import('primevue/button')['default']
-    Calendar: typeof import('primevue/calendar')['default']
     CheckTreeSelect: typeof import('./src/components/CheckTreeSelect.vue')['default']
     ConfirmModal: typeof import('./src/components/ConfirmModal.vue')['default']
-    DatePicker: typeof import('primevue/datepicker')['default']
     DateRangePicker: typeof import('./src/components/DateRangePicker.vue')['default']
     DropdownComponent: typeof import('./src/components/DropdownComponent.vue')['default']
     HelperCsvComponent: typeof import('./src/components/Promo/HelperCsvComponent.vue')['default']
@@ -26,8 +23,6 @@ declare module 'vue' {
     ModalComponent: typeof import('./src/components/ModalComponent.vue')['default']
     NavBar: typeof import('./src/components/NavBar/NavBar.vue')['default']
     NavBarItem: typeof import('./src/components/NavBar/NavBarItem.vue')['default']
-    OperatorAutoComplete: typeof import('./src/components/OperatorAutoComplete.vue')['default']
-    OperatorTreeSelect: typeof import('./src/components/OperatorTreeSelect.vue')['default']
     OTPInput: typeof import('./src/components/OTPInput.vue')['default']
     PageHeaderComponent: typeof import('./src/components/PageHeaderComponent.vue')['default']
     PaginationNav: typeof import('./src/components/WLSTable/PaginationNav.vue')['default']
